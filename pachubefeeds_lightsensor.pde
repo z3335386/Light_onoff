@@ -14,7 +14,7 @@ void setup()
 println(Arduino.list());
 arduino = new Arduino(this, Arduino.list()[0], 57600);
 
-dOut = new DataOut(this, "http://www.pachube.com/api/35483.xml", "4Xt4EbyHzKpoNj1w1fxsTEelWDPbBD6sGdVG2Tjj0iY"); 
+dOut = new DataOut(this, "http://www.pachube.com/api/35483.xml", "APIkey"); 
 
 dOut.addData(0,"test, light sensor");
 dOut.addData(1,"test, timer");
